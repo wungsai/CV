@@ -7,6 +7,9 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
+  // Required only if your site is hosted on a subpath (e.g., github.io/repo-name)
+  basePath:  '/CV', 
+  assetPrefix:  '/CV/',
 };
 
 export default nextConfig;
