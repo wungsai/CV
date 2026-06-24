@@ -38,8 +38,8 @@ type IconProps = {
   className?: string;
 };
 
-const basePath = process.env.__NEXT_ROUTER_BASEPATH || '';
 
+const basePath = process.env.__NEXT_ROUTER_BASEPATH || '';
 export const BrandIconImage = ({ brand, label, className }: IconProps) => {
   const src = BRAND_ICON_SOURCES[brand as BrandIconKey];
 
