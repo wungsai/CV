@@ -18,7 +18,7 @@ export const TimelineItem = ({ year, role, company, desc, image }: TimelineItemP
     className="relative pl-12 group"
   >
     <div className="absolute -left-[11px] top-0 w-5 h-5 rounded-full bg-[#252525] border-4 border-[#F8C05E] z-10" />
-    <div className="grid grid-cols-2">
+    <div className="flex flex-col md:flex-row md:justify-between gap-6 mb-4">
       <div>
         <span className="inline-block px-3 py-1 bg-[#323232] text-[#F8C05E] text-[10px] font-black uppercase tracking-[0.2em] rounded mb-4">
           {year}
@@ -26,7 +26,7 @@ export const TimelineItem = ({ year, role, company, desc, image }: TimelineItemP
         <h3 className="text-3xl font-serif font-bold text-white mb-1">
           {role}
         </h3>
-        <p className="text-[#F8C05E] text-xs uppercase tracking-[0.3em] font-black mb-6">
+        <p className="text-[#F8C05E] text-xs uppercase tracking-[0.3em] font-black mb-2 md:mb-6">
           {company}
         </p>
       </div>

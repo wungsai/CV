@@ -24,8 +24,8 @@ export const Hero = () => (
           Full-Stack Software Engineer & <br />
           <span className="text-white font-semibold">Full Cycle Developer</span>
         </p>
-        <div className="flex gap-4">
-          <CustomButton variant="bordered">Contact Me</CustomButton>
+        <div className="flex flex-col sm:flex-row gap-4">
+          <CustomButton variant="bordered" onClick={() => window.location.href = "#contact"}>Contact Me</CustomButton>
           <CustomButton variant="bordered" onClick={downloadCV}>
             Download CV
           </CustomButton>
@@ -35,7 +35,7 @@ export const Hero = () => (
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1 }}
-        className="relative flex justify-center"
+        className="relative flex flex-col items-center md:block md:flex md:justify-center"
       >
         <div className="relative w-full max-w-[480px] aspect-[4/5] rounded-b-[240px] overflow-hidden border-b-[12px] border-[#F8C05E] shadow-2xl">
           <img
@@ -45,7 +45,7 @@ export const Hero = () => (
             loading="lazy"
           />
         </div>
-        <div className="absolute right-0 top-1/2 -translate-y-1/2 flex flex-col gap-8 text-[#A1A1A1]">
+        <div className="mt-8 flex flex-row gap-8 text-[#A1A1A1] md:mt-0 md:absolute md:right-0 md:top-1/2 md:-translate-y-1/2 md:flex-col">
           <SocialIconLink
             href="https://github.com/wungsai"
             brand="GitHub"

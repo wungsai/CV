@@ -3,6 +3,9 @@ import React from "react";
 export const BRAND_ICON_SOURCES = {
   Claude: "/icons/brands/claude.svg",
   Gemini: "/icons/brands/gemini.svg",
+  Antigravity: "/icons/brands/google-antigravity.svg",
+  Codex: "/icons/brands/codex.svg",
+  ChatGPT: "/icons/brands/openai-chatgpt.svg",
   GitHubCopilot: "/icons/brands/github-copilot.svg",
   Nextjs: "/icons/brands/nextdotjs.svg",
   Nuxt: "/icons/brands/nuxt.svg",

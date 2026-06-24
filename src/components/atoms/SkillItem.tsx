@@ -9,8 +9,8 @@ type SkillItemProps = {
   name: string;
   brand: string;
   active?: boolean;
-  color: string;
-  iconBg?: string;
+  color?: string | undefined;
+  iconBg?: string | undefined;
 };
 
 export const SkillItem = ({ name, brand, active, color, iconBg }: SkillItemProps) => {

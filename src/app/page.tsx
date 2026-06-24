@@ -25,10 +25,10 @@ export default function App() {
         <Hero />
 
         {/* ABOUT */}
-        <motion.section id="about" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={TOKENS.animations.fadeInUp} className="py-32 bg-[#1A1A1A]/30">
+        <motion.section id="about" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={TOKENS.animations.fadeInUp} className="py-16 md:py-32 bg-[#1A1A1A]/30">
           <div className="max-w-4xl mx-auto px-6 text-center">
             <SectionHeading title="About" />
-            <p className="text-2xl text-[#A1A1A1] leading-relaxed font-light">
+            <p className="text-xl md:text-2xl text-[#A1A1A1] leading-relaxed font-light">
               I am a <span className="text-[#F8C05E] font-medium italic underline decoration-[#F8C05E]/30 underline-offset-8">trustworthy, creative, and highly proactive</span> Software Engineer based in Vientiane, Laos. 
               With an International Bachelor&apos;s in Computer Science, I specialize in building robust E-Wallet, E-Commerce, and Insurance systems. 
               I am self-motivated and fondly anticipate professional growth in challenging environments.
@@ -37,7 +37,7 @@ export default function App() {
         </motion.section>
 
         {/* SKILLS CATEGORIZED */}
-        <motion.section id="skills" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={TOKENS.animations.fadeInUp} className="py-32 max-w-7xl mx-auto px-6">
+        <motion.section id="skills" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={TOKENS.animations.fadeInUp} className="py-16 md:py-32 max-w-7xl mx-auto px-6">
           <SectionHeading title="My Skills" subtitle="High-tier expertise across the modern development stack" />
           
           <div className="space-y-20">
@@ -65,7 +65,7 @@ export default function App() {
         </motion.section>
 
         {/* EXPERIENCE - FULL LIST FROM CV */}
-        <motion.section id="experience" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={TOKENS.animations.fadeInUp} className="py-32 max-w-5xl mx-auto px-6">
+        <motion.section id="experience" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={TOKENS.animations.fadeInUp} className="py-16 md:py-32 max-w-5xl mx-auto px-6">
           <SectionHeading title="Experience" subtitle="Full professional trajectory and tenure" />
           <div className="relative border-l-2 border-white/10 ml-6 space-y-24">
             {EXPERIENCES.map((exp, idx) => (
@@ -82,7 +82,7 @@ export default function App() {
         </motion.section>
 
         {/* PROJECTS */}
-        <motion.section id="portfolio" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={TOKENS.animations.fadeInUp} className="py-32 bg-[#1A1A1A]/30">
+        <motion.section id="portfolio" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={TOKENS.animations.fadeInUp} className="py-16 md:py-32 bg-[#1A1A1A]/30">
           <div className="max-w-7xl mx-auto px-6">
             <SectionHeading title="Portfolio" subtitle="Key Projects Handled" />
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -119,7 +119,7 @@ export default function App() {
         </motion.section>
 
         {/* CONTACT */}
-        <motion.section id="contact" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={TOKENS.animations.fadeInUp} className="py-32">
+        <motion.section id="contact" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={TOKENS.animations.fadeInUp} className="py-16 md:py-32">
           <SectionHeading title="Contact Me" />
           <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
             <CustomCard className="bg-[#323232] p-10 flex flex-row items-center gap-6">
@@ -149,7 +149,7 @@ export default function App() {
         </motion.section>
       </main>
 
-      <footer className="py-32 text-center border-t border-white/5">
+      <footer className="py-16 md:py-32 text-center border-t border-white/5">
         <div className="flex justify-center gap-10 mb-16 text-[#A1A1A1]">
           <SocialIconLink
             href="https://github.com/wungsai"
@@ -176,7 +176,7 @@ export default function App() {
             hover="scale"
           />
         </div>
-        <h2 className="text-6xl font-serif italic text-white/5 tracking-tight">&quot;Thanks for Scrolling&quot;</h2>
+        <h2 className="text-4xl md:text-6xl font-serif italic text-white/5 tracking-tight">&quot;Thanks for Scrolling&quot;</h2>
         <p className="mt-12 text-[10px] uppercase tracking-[0.4em] text-gray-700 font-bold">WUNGSAILOR VANGCHAY • Full Cycle Developer</p>
       </footer>
     </div>

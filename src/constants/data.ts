@@ -1,10 +1,27 @@
-export const SKILL_CATEGORIES = [
+export interface Skill {
+  name: string;
+  brand: string;
+  color?: string;
+  active: boolean;
+  iconBg?: string;
+}
+
+export interface SkillCategory {
+  title: string;
+  skills: Skill[];
+}
+
+export const SKILL_CATEGORIES: SkillCategory[] = [
   {
     title: "AI & Productivity Coding",
     skills: [
       { name: "Claude AI", brand: "Claude", color: "#D97757", active: true },
       { name: "Google Gemini", brand: "Gemini", color: "#3085FF", active: true },
-      { name: "GitHub Copilot Chat", brand: "GitHubCopilot", color: "#FFFFFF", active: true },
+      { name: "Chat GPT", brand: "ChatGPT", active: true },
+      { name: "GitHub Copilot Chat (VS Code)", brand: "GitHubCopilot", active: true },
+      { name: "Google Antigravity", brand: "Antigravity", active: true },
+      { name: "GPT Codex", brand: "Codex", color: "#FFFFFF", active: true },
+
     ]
   },
   {
@@ -13,8 +30,8 @@ export const SKILL_CATEGORIES = [
       { name: "Next.js", brand: "Nextjs", color: "#000000", active: true },
       { name: "Nuxt", brand: "Nuxt", color: "#00DC82", active: true },
       { name: "Flutter", brand: "Flutter", color: "#02569B", active: true },
-      { name: "TypeScript", brand: "TypeScript", color: "#3178C6", active: true },
       { name: "AdonisJS", brand: "AdonisJS", color: "#8459fa", active: true },
+      { name: "TypeScript", brand: "TypeScript", color: "#3178C6", active: true },
 
     ]
   },
