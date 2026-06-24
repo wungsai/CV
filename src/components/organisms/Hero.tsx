@@ -5,6 +5,7 @@ import { CustomButton } from "../atoms/CustomButton";
 import { SocialIconLink } from "../atoms/SocialIconLink";
 import { downloadCV } from "@/utils/downloadCV";
 
+const basePath = process.env.__NEXT_ROUTER_BASEPATH || '';
 export const Hero = () => (
   <header className="relative min-h-screen flex items-center pt-20 overflow-hidden">
     <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center w-full">
@@ -41,7 +42,7 @@ export const Hero = () => (
           <img
             alt="Wungsailor Vangchay"
             className="w-full h-full object-cover object-top md:grayscale lg:grayscale sm:grayscale-0 hover:grayscale-0 transition-all duration-1000"
-            src="profile.jpg"
+            src={`${basePath}/profile.jpg`}
             loading="lazy"
           />
         </div>

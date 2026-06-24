@@ -10,6 +10,8 @@ type TimelineItemProps = {
   image?: string;
 };
 
+const basePath = process.env.__NEXT_ROUTER_BASEPATH || '';
+
 export const TimelineItem = ({ year, role, company, desc, image }: TimelineItemProps) => (
   <motion.div
     initial={{ opacity: 0, x: 20 }}
@@ -31,7 +33,7 @@ export const TimelineItem = ({ year, role, company, desc, image }: TimelineItemP
         </p>
       </div>
       <div>
-        {image && <img src={image} alt={company} className="h-24 p-2 rounded-md bg-white object-contain" />}
+        {image && <img src={`${basePath}/${image}`} alt={company} className="h-24 p-2 rounded-md bg-white object-contain" />}
       </div>
     </div>
     <div className="text-[#A1A1A1] font-light leading-relaxed text-lg max-w-3xl whitespace-pre-wrap">

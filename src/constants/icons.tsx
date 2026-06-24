@@ -38,6 +38,8 @@ type IconProps = {
   className?: string;
 };
 
+const basePath = process.env.__NEXT_ROUTER_BASEPATH || '';
+
 export const BrandIconImage = ({ brand, label, className }: IconProps) => {
   const src = BRAND_ICON_SOURCES[brand as BrandIconKey];
 
@@ -45,7 +47,7 @@ export const BrandIconImage = ({ brand, label, className }: IconProps) => {
     return <FallbackIcon label={label} className={className} />;
   }
 
-  return <img src={src} alt={label} className={className} loading="lazy" />;
+  return <img src={`${basePath}${src}`} alt={label} className={className} loading="lazy" />;
 };
 
 export const MaskedBrandIcon = ({ brand, label, className }: IconProps) => {

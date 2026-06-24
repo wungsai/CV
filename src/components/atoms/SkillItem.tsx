@@ -13,6 +13,7 @@ type SkillItemProps = {
   iconBg?: string | undefined;
 };
 
+
 export const SkillItem = ({ name, brand, active, color, iconBg }: SkillItemProps) => {
   const isHighlight = !!iconBg;
   const bgColor = (active && isHighlight) ? iconBg : '#323232';
