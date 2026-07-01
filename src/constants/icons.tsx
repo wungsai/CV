@@ -48,7 +48,7 @@ export const BrandIconImage = ({ brand, label, className }: IconProps) => {
     return <FallbackIcon label={label} className={className} />;
   }
 
-  return <img src={`${basePath}/CV/${src}`} alt={label} className={className} loading="lazy" />;
+  return <img src={`${basePath}/${src}`} alt={label} className={className} loading="lazy" />;
 };
 
 export const MaskedBrandIcon = ({ brand, label, className }: IconProps) => {
