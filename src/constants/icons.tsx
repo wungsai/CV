@@ -39,15 +39,16 @@ type IconProps = {
 };
 
 
-const basePath = process.env.__NEXT_ROUTER_BASEPATH || '';
+// const basePath = process.env.__NEXT_ROUTER_BASEPATH || '';
 export const BrandIconImage = ({ brand, label, className }: IconProps) => {
+  const basePath = process.env.__NEXT_ROUTER_BASEPATH || '';
   const src = BRAND_ICON_SOURCES[brand as BrandIconKey];
 
   if (!src) {
     return <FallbackIcon label={label} className={className} />;
   }
 
-  return <img src={`${basePath}/${src}`} alt={label} className={className} loading="lazy" />;
+  return <img src={`${basePath}/CV/${src}`} alt={label} className={className} loading="lazy" />;
 };
 
 export const MaskedBrandIcon = ({ brand, label, className }: IconProps) => {
