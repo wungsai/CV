@@ -28,6 +28,10 @@ export const BRAND_ICON_SOURCES = {
   Photoshop: "/icons/brands/photoshop.svg",
   Excel: "/icons/brands/microsoft-excel.svg",
   Network: "/icons/brands/network.svg",
+  CSharp: "/icons/brands/c-sharp.svg",
+  Python: "/icons/brands/python.svg",
+  Docker: "/icons/brands/docker.svg",
+
 } as const;
 
 export type BrandIconKey = keyof typeof BRAND_ICON_SOURCES;

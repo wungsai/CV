@@ -1,0 +1,45 @@
+{
+  "skill_name": "3-step-plan-and-execute",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I need to build a React dashboard that fetches daily stock prices from a public API and displays them in a chart.",
+      "expected_output": "Agent should analyze the request, create a phased plan, verify it, and then prompt the user to choose between Gemini 3.5 Flash (High) and Claude Sonnet 4.6 before executing.",
+      "assertions": [
+        {
+          "name": "creates_plan_artifact",
+          "description": "The subagent creates an artifact named plan.md or tasks.md"
+        },
+        {
+          "name": "plan_has_checkboxes",
+          "description": "The plan contains markdown checkboxes like [ ] or [x] for tracking tasks"
+        },
+        {
+          "name": "stops_for_model_selection",
+          "description": "The subagent stops execution and asks the user to choose between Gemini 3.5 Flash (High) and Claude Sonnet 4.6"
+        }
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Create a plan to refactor my Python backend from Flask to FastAPI, including testing.",
+      "expected_output": "Agent should analyze the request, create a phased plan, verify it, and then prompt the user to choose between Gemini 3.5 Flash (High) and Claude Sonnet 4.6 before executing.",
+      "assertions": [
+        {
+          "name": "creates_plan_artifact",
+          "description": "The subagent creates an artifact named plan.md or tasks.md"
+        },
+        {
+          "name": "plan_has_checkboxes",
+          "description": "The plan contains markdown checkboxes like [ ] or [x] for tracking tasks"
+        },
+        {
+          "name": "stops_for_model_selection",
+          "description": "The subagent stops execution and asks the user to choose between Gemini 3.5 Flash (High) and Claude Sonnet 4.6"
+        }
+      ],
+      "files": []
+    }
+  ]
+}

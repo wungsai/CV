@@ -17,7 +17,7 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
     skills: [
       { name: "Claude AI", brand: "Claude", color: "#D97757", active: true },
       { name: "Google Gemini", brand: "Gemini", color: "#3085FF", active: true },
-      { name: "Chat GPT", brand: "ChatGPT", active: true },
+      { name: "ChatGPT", brand: "ChatGPT", active: true, },
       { name: "GitHub Copilot Chat (VS Code)", brand: "GitHubCopilot", active: true },
       { name: "Google Antigravity", brand: "Antigravity", active: true },
       { name: "GPT Codex", brand: "Codex", color: "#FFFFFF", active: true },
@@ -40,9 +40,11 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
     skills: [
       { name: "Rust", brand: "Rust", color: "#ffffff", active: true, },
       { name: "Golang", brand: "Golang", color: "#00ADD8", active: true },
+      { name: "Python", brand: "Python", active: true, },
+      { name: "C#", brand: "CSharp", active: true, },
       { name: "Java Spring Boot", brand: "JavaSpring", color: "#6DB33F", active: true },
       { name: "Express.js", brand: "Express", color: "#FFFFFF", active: true },
-      { name: "PHP", brand: "PHP", color: "#4f5b93", active: true, iconBg: "#4f5b93" },
+      { name: "PHP", brand: "PHP", active: true, },
     ]
   },
   {
@@ -61,6 +63,7 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
       { name: "Git", brand: "Git", color: "#F05032", active: true },
       { name: "GitHub", brand: "GitHub", color: "#FFFFFF", active: true },
       { name: "GitLab", brand: "GitLab", color: "#E24329", active: true },
+      { name: "Docker", brand: "Docker", active: true },
     ]
   },
   {
